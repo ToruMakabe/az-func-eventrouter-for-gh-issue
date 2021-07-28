@@ -1,0 +1,23 @@
+# If you don't want to manage with files, choose other means such as environment variables.
+# https://www.terraform.io/docs/language/values/variables.html
+
+eventrouter_rg       = "rg-eventrouter-gh-issue"
+eventrouter_location = "japaneast"
+prefix              = "your-name"
+appinsights_ikey    = "your-appinsights-ikey"
+github_create_issue_target = {
+  owner = "your-target-gh-repo-owner"
+  repo = "your-target-gh-repo-name"
+  token = "your-target-gh-repo-token"
+}
+github_eventrouter = {
+  # owner is not required (the user account owning the token will be used)
+  repo = "your-eventrouter-repo-name"
+  token = "your-eventrouter-repo-token"
+}
+azure_credentials = {
+  subscription_id = "your-azure-subscription-id"
+  tenant_id       = "your-azuread-tenant-id"
+  client_id       = "your-serviceprincipal-client-id"
+  client_secret   = "your-serviceprincipal-client-secret"
+}
